@@ -482,7 +482,7 @@ trait ElasticsearchModel
     /**
      * Perform a model insert operation.
      *
-     * @param  \Illuminate\Database\Eloquent\Builder<static>  $query
+     * @param  Builder<static>  $query
      */
     protected function performInsert(Builder $query): bool
     {

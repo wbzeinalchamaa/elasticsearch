@@ -2136,7 +2136,7 @@ class Builder extends BaseBuilder
      *
      * @link https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete-by-query.html#docs-delete-by-query-api-query-params
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public function onConflicts(string $option = self::CONFLICT['PROCEED']): self
     {
@@ -2146,7 +2146,7 @@ class Builder extends BaseBuilder
             return $this;
         }
 
-        throw new \Exception(
+        throw new Exception(
             "$option is an invalid conflict option, valid options are: ".implode(', ', self::CONFLICT)
         );
     }
